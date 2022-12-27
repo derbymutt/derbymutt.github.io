@@ -111,12 +111,9 @@ var bop = [
 	"GR.1",
 	"GR.2",
 	"GR.3",
-	"GR.4",
-	"GR.B",
-	"GR.1",
-	"GR.2",
-	"GR.3",
-	"GR.4",
+	"GR.4"
+];
+var onemake = [
 	"Mazda Roadster (ND) NR-A 2022 (N)",
 	"Mini Cooper S 1965 (U)",
 	"Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
@@ -153,21 +150,21 @@ function run() {
 	document.getElementById('track').innerHTML = rand(tracks);
 	document.getElementById('pp').innerHTML = randomIntFromInterval(300,1000);
 	document.getElementById('bop').innerHTML = rand(bop);
+	document.getElementById('onemake').innerHTML = rand(onemake);
 }
 </script>
 
 <html>
 <body>
 <button onclick = "run()">Randomize</button>
-<h3>Track:</h3>
-</br>
-<div id="track"></div>
-<h3>Performance Points:</h3>
-</br>
-<div id="pp"></div>
-<h3>BOP Category/One Make:</h3>
-</br>
-<div id="bop"></div>
+<h1>Track:
+<h2><div id="track"></div></h2>
+<h1>Performance Points:</h1>
+<h2><div id="pp"></div></h2>
+<h1>BOP Category/One Make:</h1>
+<h2><div id="bop"></div> 
+or</h2>
+<h2><div id="onemake"></div></h2>
 
 
 
