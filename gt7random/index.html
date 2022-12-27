@@ -129,12 +129,13 @@ var onemake = [
 	"Gran Turismo Racing Kart 125 Shifter (N)",
 	"BMW M2 Competition 2018 (N)",
 	"Alfa Romeo Giulia GTAm 2020 (N)",
-	"Gran Turismo F1500T-A (N) / McLaren MP4/4 1988 (L) / Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
-	"Dodge SRT Tomahawk X Vision Gran Turismo (N) / Ford F-150 SVT Raptor 2011 (N) / Toyota Tundra TRD Pro 2019 (N)",
-	"Ford F-150 SVT Raptor 2011 (N) / Toyota Tundra TRD Pro 2019 (N)",
-	"Suzuki Cappuccino 1991 (U) / Daihatsu Copen 2002 (N) / Honda Beat 1991 (U) / Honda S660 2015 (N)",
-	"Hyundai Genesis Coupe 3.8 2013 (N) / Mazda Atenza Sedan XD 2015 (N)",
-	"KTM X-Bow R 2012 (N) / BAC Mono 2011 (N) / Honda Project 2&4 powered by RC213V 2015 (N)"
+	"Gran Turismo F1500T-A (N) </br> McLaren MP4/4 1988 (L) </br> Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
+	"Dodge SRT Tomahawk X Vision Gran Turismo (N) </br> Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
+	"Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
+	"Suzuki Cappuccino 1991 (U) </br> Daihatsu Copen 2002 (N) </br> Honda Beat 1991 (U) </br> Honda S660 2015 (N)",
+	"Hyundai Genesis Coupe 3.8 2013 (N) </br> Mazda Atenza Sedan XD 2015 (N)",
+	"KTM X-Bow R 2012 (N) </br> BAC Mono 2011 (N) </br> Honda Project 2&4 powered by RC213V 2015 (N)",
+	"Gran Turismo Red Bull X2014 Standard 2014 (N) </br> Gran Turismo Red Bull X2019 Competition 2019 (N)" 
 ];
 
 function rand(items) {
@@ -148,7 +149,7 @@ function randomIntFromInterval(min, max) { // min and max included
 
 function run() {
 	document.getElementById('track').innerHTML = rand(tracks);
-	document.getElementById('pp').innerHTML = randomIntFromInterval(300,1000);
+	document.getElementById('pp').innerHTML = randomIntFromInterval(300,900);
 	document.getElementById('bop').innerHTML = rand(bop);
 	document.getElementById('onemake').innerHTML = rand(onemake);
 }
