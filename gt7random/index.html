@@ -1,0 +1,178 @@
+<script type="text/javascript">
+
+var tracks = [
+	"Interlagos",
+	"Autodromo Nazionale di Monza",
+	"Autodromo Nazionale di Monza (No Chicane)",
+	"Autopolis International Racing Course",
+	"Autopolis Shortcut Course",
+	"Brands Hatch GP",
+	"Brands Hatch Indy Circuit",
+	"Circuit de Barcelona-Catalunya GP",
+	"Circuit de Barcelona-Catalunya GP (No Chicane)",
+	"Circuit de Barcelona-Catalunya GP National",
+	"Circuit de Barcelona-Catalunya GP Rallycross",
+	"24 Heures du Mans Racing Circuit",
+	"24 Heures du Mans Racijng Circuit (No Chicane)",
+	"Circuit de Spa-Francorchamps",
+	"Circuit de Spa-Francorchamps 24h",
+	"Daytona International Speedway Tri-Oval",
+	"Daytona International Speedway Road Course",
+	"Fuji International Speedway",
+	"Fuji International Speedway Short Course",
+	"Goodwood Motor Circuit",
+	"Michelin Raceway Road Atlanta",
+	"Mount Panorama",
+	"Nurburgring 24h",
+	"Nurburgring GP",
+	"Nurburgring Nordschleife",
+	"Red Bull Ring",
+	"Red Bull Ring Short Track",
+	"Suzuka Circuit",
+	"Suzuka East Course",
+	"Tsukuba Circuit",
+	"Watkins Glen Long Course",
+	"Watkins Glen Short Course",
+	"Laguna Seca",
+	"Big Willow",
+	"Horse Thief Mile",
+	"Horse Thief Mile Reverse",
+	"Streets of Willow",
+	"Streets of Willow Reverse",
+	"Alsace Village",
+	"Alsace Village Reverse",
+	"Alsace Test Course",
+	"Alsace Test Course Reverse",
+	"Autodrome Lago Maggiore GP",
+	"Autodrome Lago Maggiore GP Reverse",
+	"Autodrome Lago Maggiore Center",
+	"Autodrome Lago Maggiore Center Reverse",
+	"Autodrome Lago Maggiore East",
+	"Autodrome Lago Maggiore Ease Reverse",
+	"Autodrome Lago Maggiore East End",
+	"Autodrome Lago Maggiore Ease End Reverse",
+	"Autodrome Lago Maggiore West",
+	"Autodrome Lago Maggiore West Reverse",
+	"Autodrome Lago Maggiore West End",
+	"Autodrome Lago Maggiore West End Reverse",
+	"Blue Moon Bay Speedway",
+	"Blue Moon Bay Speedway Reverse",
+	"Blue Moon Bay Infield A",
+	"Blue Moon Bay Infield A Reverse",
+	"Blue Moon Bay Infield B",
+	"Blue Moon Bay Infield B Reverse",
+	"BB Raceway",
+	"BB Raceway Reverse",
+	"Circuit de Sainte-Croix A",
+	"Circuit de Sainte-Croix A Reverse",
+	"Circuit de Sainte-Croix B",
+	"Circuit de Sainte-Croix B Reverse",
+	"Circuit de Sainte-Croix C",
+	"Circuit de Sainte-Croix C Reverse",
+	"Colorado Springs Lake",
+	"Colorado Springs Lake Reverse",
+	"Deep Forest Raceway",
+	"Deep Forest Raceway Reverse",
+	"Dragon Trail Gardens",
+	"Dragon Trail Gardens Reverse",
+	"Dragon Trail Seaside",
+	"Dragon Trail Seaside Reverse",
+	"Fishermans Ranch",
+	"Fishermans Ranch Reverse",
+	"High Speed Ring",
+	"High Speed Ring Reverse",
+	"Kyoto Driving Park Miyabi",
+	"Kyoto Driving Park Yamagiwa",
+	"Kyoto Driving Park Yamagiwa Reverse",
+	"Kyoto Driving Park Yamagiwa+Miyabi",
+	"Kyoto Driving Park Yamagiwa+Miyabi Reverse",
+	"Northern Isle Speedway",
+	"Sardegna Road A",
+	"Sardegna Road A Reverse",
+	"Sardegna Road B",
+	"Sardegna Road B Reverse",
+	"Sardegna Road C",
+	"Sardegna Road C Reverse",
+	"Sardegna Windmills",
+	"Sardegna Windmills Reverse",
+	"Special Stage Route X",
+	"Tokyo Expressway Central",
+	"Tokyo Expressway Central Reverse",
+	"Tokyo Expressway East",
+	"Tokyo Expressway East Reverse",
+	"Tokyo Expressway South",
+	"Tokyo Expressway South Reverse",
+	"Trial Mountain",
+	"Trial Mountain Reverse"
+];
+
+var bop = [
+	"GR.B",
+	"GR.1",
+	"GR.2",
+	"GR.3",
+	"GR.4",
+	"GR.B",
+	"GR.1",
+	"GR.2",
+	"GR.3",
+	"GR.4",
+	"Mazda Roadster (ND) NR-A 2022 (N)",
+	"Mini Cooper S 1965 (U)",
+	"Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
+	"Suzuki Swift Sport 2007 (N/U)",
+	"Toyota 86/Subaru BRZ (N)",
+	"Volkswagen Samba Bus Type 2 (T1) 1962 (U)",
+	"Volkswagen Polo GTI 2014 (N)",
+	"Toyota Corolla Levin/Trueno AE86 1983 (U)",
+	"Toyota Prius 2009 (N/U)",
+	"Renault Sport Clio R.S. 220 EDC Trophy 2015/2016 (N)",
+	"Mitsubishi GTO Twin Turbo 1991 (U)",
+	"Honda Civic (EK9) Type R 1997/1998 (U)",
+	"Gran Turismo Racing Kart 125 Shifter (N)",
+	"BMW M2 Competition 2018 (N)",
+	"Alfa Romeo Giulia GTAm 2020 (N)",
+	"Gran Turismo F1500T-A (N) / McLaren MP4/4 1988 (L) / Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
+	"Dodge SRT Tomahawk X Vision Gran Turismo (N) / Ford F-150 SVT Raptor 2011 (N) / Toyota Tundra TRD Pro 2019 (N)",
+	"Ford F-150 SVT Raptor 2011 (N) / Toyota Tundra TRD Pro 2019 (N)",
+	"Suzuki Cappuccino 1991 (U) / Daihatsu Copen 2002 (N) / Honda Beat 1991 (U) / Honda S660 2015 (N)",
+	"Hyundai Genesis Coupe 3.8 2013 (N) / Mazda Atenza Sedan XD 2015 (N)",
+	"KTM X-Bow R 2012 (N) / BAC Mono 2011 (N) / Honda Project 2&4 powered by RC213V 2015 (N)"
+];
+
+function rand(items) {
+    // "~~" for a closest "int"
+    return items[~~(items.length * Math.random())];
+}
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+function run() {
+	document.getElementById('track').innerHTML = rand(tracks);
+	document.getElementById('pp').innerHTML = randomIntFromInterval(300,1000);
+	document.getElementById('bop').innerHTML = rand(bop);
+}
+</script>
+
+<html>
+<body>
+<button onclick = "run()">Randomize</button>
+<h3>Track:</h3>
+</br>
+<div id="track"></div>
+<h3>Performance Points:</h3>
+</br>
+<div id="pp"></div>
+<h3>BOP Category/One Make:</h3>
+</br>
+<div id="bop"></div>
+
+
+
+
+</body>
+
+
+</html>
