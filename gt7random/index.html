@@ -116,20 +116,20 @@ var bop = [
 var onemake = [
 	"Mazda Roadster (ND) NR-A 2022 (N)",
 	"Mini Cooper S 1965 (U)",
-	"Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
+	"Super Formula SF19 Dallara/Honda 2019 (N)</br>Super Formula SF19 Dallara/Toyota 2019 (N)",
 	"Suzuki Swift Sport 2007 (N/U)",
 	"Toyota 86/Subaru BRZ (N)",
 	"Volkswagen Samba Bus Type 2 (T1) 1962 (U)",
 	"Volkswagen Polo GTI 2014 (N)",
-	"Toyota Corolla Levin/Trueno AE86 1983 (U)",
+	"Toyota Corolla Levin AE86 1983 (U)</br>Toyota Sprinter Trueno AE86 1983 (U)",
 	"Toyota Prius 2009 (N/U)",
-	"Renault Sport Clio R.S. 220 EDC Trophy 2015/2016 (N)",
+	"Renault Sport Clio R.S. 220 EDC Trophy 2015 (N)</br>Renault Sport Clio R.S. 220 EDC Trophy 2016 (N)",
 	"Mitsubishi GTO Twin Turbo 1991 (U)",
 	"Honda Civic (EK9) Type R 1997/1998 (U)",
 	"Gran Turismo Racing Kart 125 Shifter (N)",
 	"BMW M2 Competition 2018 (N)",
 	"Alfa Romeo Giulia GTAm 2020 (N)",
-	"Gran Turismo F1500T-A (N) </br> McLaren MP4/4 1988 (L) </br> Super Formula SF19 Dallara/Honda/Toyota 2019 (N)",
+	"Gran Turismo F1500T-A (N) </br> McLaren MP4/4 1988 (L) </br> Super Formula SF19 Dallara/Honda 2019 (N)</br>Super Formula SF19 Dallara/Toyota 2019 (N)",
 	"Dodge SRT Tomahawk X Vision Gran Turismo (N) </br> Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
 	"Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
 	"Suzuki Cappuccino 1991 (U) </br> Daihatsu Copen 2002 (N) </br> Honda Beat 1991 (U) </br> Honda S660 2015 (N)",
@@ -155,19 +155,73 @@ function run() {
 }
 </script>
 
-<html>
-<body onload="run()">
-<button onclick = "run()">Randomize</button>
-<h1>Track:
-<h2><div id="track"></div></h2>
-<h1>Performance Points:</h1>
-<h2><div id="pp"></div></h2>
-<h1>BOP Category/One Make:</h1>
-<h2><div id="bop"></div> 
-or</h2>
-<h2><div id="onemake"></div></h2>
-<button onclick = "run()">Randomize</button>
+<style>
+	.box {
+	background-color: f4dbaf;
+	border: 32px solid f4dbaf;
+	border-radius: 32px;
+	padding: 1em 1em 1em 1em;
+	margin: 1em 1em 1em 1em;
+	}
+	.bg {
+	background-color: b96d01;
+	}
+	.buttonBEER {
+	background-color: b96d01;
+	border: 32px solid f4dbaf;
+	border-radius: 32px;
+	padding: 1em 1em 1em 1em;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 1em 1em 1em 1em;
+	}
+	.textBIGGUN {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	}
+	
+	.textTHICCblu {
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	}
+	.textTHICCblk {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	}
 
+</style>
+
+<html>
+<body onload="run()" class="bg">
+	<div class="box">
+	<center><button onclick = "run()" class="buttonBEER">Randomize</button>
+	<p class="textBIGGUN">Track:</p>
+	
+	<div id="track" class="textTHICCblu"></div>
+	
+	<p class="textBIGGUN">Performance Points:</p>
+	
+	<div id="pp" class="textTHICCblu"></div>
+	
+	<p class="textBIGGUN">BOP Category/One Make:</p>
+	
+	<div id="bop" class="textTHICCblu"></div>
+	
+	<p class="textTHICCblk">or</p>
+	
+	<div id="onemake" class="textTHICCblu"></div>
+	
+	<button onclick = "run()" class="buttonBEER">Randomize</button>
+	</center>
+</div>
 
 
 </body>
