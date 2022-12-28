@@ -116,26 +116,58 @@ var bop = [
 var onemake = [
 	"Mazda Roadster (ND) NR-A 2022 (N)",
 	"Mini Cooper S 1965 (U)",
-	"Mini Cooper S 1965 (U)</br>Dodge Super Bee 1970 (U)",
-	"Chevrolet Corvette (C8) Stingray 2020 (N)</br>Chevrolet Corvette (C6) ZR1 2009 (N/U)</br>Chevrolet Corvette (C7) Stingray 2014 (N)</br>Chevrolet Corvette (C7) ZR1 2019 (N)</br>Ferrari 458 Italia 2009 (N/U)</br>Ferrari F430 2006 (N/U)</br>Ferrari F8 Tributo 2020 (N)</br>Ferrari F12berlinetta 2013 (N)",
 	"Super Formula SF19 Dallara/Honda 2019 (N)</br>Super Formula SF19 Dallara/Toyota 2019 (N)",
 	"Suzuki Swift Sport 2007 (N/U)",
-	"Toyota 86 GT 2015 (N)</br>Toyota 86 GRMN 2016 (N)</br>Toyota 86 GT “Limited” 2016 (N)</br>Toyota GR 86 RZ 2021 (N)</br>Subaru BRZ S 2015 (N)</br>Subaru BRZ STI Sport 2018 (N)</br>Subaru BRZ S 2021 (N)",
 	"Volkswagen Samba Bus Type 2 (T1) 1962 (U)",
 	"Volkswagen Polo GTI 2014 (N)",
 	"Toyota Corolla Levin AE86 1983 (U)</br>Toyota Sprinter Trueno AE86 1983 (U)",
 	"Toyota Prius 2009 (N/U)",
-	"Toyota Aqua S 2011 (N/U)</br>Honda Fit Hybrid 2014 (N/U)</br>Mazda Demio XD Touring 2015 (N/U)",
 	"Renault Sport Clio R.S. 220 EDC Trophy 2015 (N)</br>Renault Sport Clio R.S. 220 EDC Trophy 2016 (N)",
 	"Mitsubishi GTO Twin Turbo 1991 (U)",
-	"Mitsubishi GTO Twin Turbo 1991 (U)</br>Genesis G70 3.3T AWD Performance Package 2022 (N)</br>Toyota Celica GT-Four (ST205) 1995 (U)",
 	"Honda Civic (EK9) Type R 1997 (U)</br>Honda Civic (EK9) Type R 1998 (U)",
-	"Honda Civic (EK9) Type R 1997 (U)</br>Honda Civic (EK9) Type R 1998 (U)</br>Honda Integra DC2 Type R 1995 (U)</br>Honda Integra DC2 Type R 1998 (U)",
-	"BMW M3 2003 (N/U)</br>MINI Cooper S 2005 (N)</br>Toyota Sprinter Trueno AE86 Shuichi Shigeno 2000 (U)",
 	"Honda Integra DC2 Type R 1995 (U)</br>Honda Integra DC2 Type R 1998 (U)",
 	"Gran Turismo Racing Kart 125 Shifter (N)",
 	"BMW M2 Competition 2018 (N)",
 	"Alfa Romeo Giulia GTAm 2020 (N)",
+	"FIAT 500F 1968 (U)",
+	"Genesis G70 3.3T AWD Performance Package 2022 (N)",
+	"Toyota Celica GT-Four (ST205) 1995 (U)",
+	"Mitsubishi Lancer Evo X Final Edition 2015 (N)",
+	"Mazda Atenza Sedan XD 2015 (N)",
+	"Mazda Roadster (ND) S 2015 (N)",
+	"Mazda Eunos Roadster NA 1989 (U)",
+	"Lexus RC F 2014 (N)",
+	"Jaguar F-Type Coupe 2014 (N)",
+	"Hyundai Genesis Coupe 3.8 2013 (N)",
+	"Honda S800 1966 (U)",
+	"Honda S660 2015 (N)",
+	"Honda Civic (FK2) Type R 2016 (N)",
+	"Honda Civic (FK8) Type R 2020 (N)",
+	"Ford Mustang GT 2015 (N)",
+	"Ford Focus ST 2015 (N)",
+	"Ford Focus RS 2018 (N)",
+	"Chevrolet Camaro SS 2016 (N)",
+	"Chevrolet Camaro ZL1 1LE 2018 (N)",
+	"Chevrolet Corvette (C8) Stingray 2020 (N)",
+	"Chevrolet Corvette (C6) ZR1 2009 (N/U)",
+	"BMW M3 2003 (N/U)",
+	"BMW M3 2007 (N/U)",
+	"BMW M4 Coupe 2014 (N)",
+	"BMW i3 2015 (N)",
+	"BMW M3 1989 (U)",
+	"BMW M3 Sport Evolution 1989 (U)",
+	"Audi TT Coupe 3.2 V6 2003 (N)",
+	"Audi TTS Coupe 2014 (N)"
+];
+
+var event = [
+	"Chevrolet Corvette (C8) Stingray 2020 (N)</br>Chevrolet Corvette (C6) ZR1 2009 (N/U)</br>Chevrolet Corvette (C7) Stingray 2014 (N)</br>Chevrolet Corvette (C7) ZR1 2019 (N)</br>Ferrari 458 Italia 2009 (N/U)</br>Ferrari F430 2006 (N/U)</br>Ferrari F8 Tributo 2020 (N)</br>Ferrari F12berlinetta 2013 (N)",
+	"Mini Cooper S 1965 (U)</br>Dodge Super Bee 1970 (U)</br>Jaguar E-Type Coupe 1961 (L)",
+	"Toyota 86 GT 2015 (N)</br>Toyota 86 GRMN 2016 (N)</br>Toyota 86 GT “Limited” 2016 (N)</br>Toyota GR 86 RZ 2021 (N)</br>Subaru BRZ S 2015 (N)</br>Subaru BRZ STI Sport 2018 (N)</br>Subaru BRZ S 2021 (N)",
+	"Toyota Aqua S 2011 (N/U)</br>Honda Fit Hybrid 2014 (N/U)</br>Mazda Demio XD Touring 2015 (N/U)",
+	"Mitsubishi GTO Twin Turbo 1991 (U)</br>Genesis G70 3.3T AWD Performance Package 2022 (N)</br>Toyota Celica GT-Four (ST205) 1995 (U)",
+	"Honda Civic (EK9) Type R 1997 (U)</br>Honda Civic (EK9) Type R 1998 (U)</br>Honda Integra DC2 Type R 1995 (U)</br>Honda Integra DC2 Type R 1998 (U)",
+	"BMW M3 2003 (N/U)</br>MINI Cooper S 2005 (N)</br>Audi TT Coupe 3.2 V6 2003 (N)",
 	"Gran Turismo F1500T-A (N) </br> McLaren MP4/4 1988 (L) </br> Super Formula SF19 Dallara/Honda 2019 (N)</br>Super Formula SF19 Dallara/Toyota 2019 (N)",
 	"Dodge SRT Tomahawk X Vision Gran Turismo (N) </br> Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
 	"Ford F-150 SVT Raptor 2011 (N) </br> Toyota Tundra TRD Pro 2019 (N)",
@@ -143,16 +175,48 @@ var onemake = [
 	"Hyundai Genesis Coupe 3.8 2013 (N) </br> Mazda Atenza Sedan XD 2015 (N)",
 	"KTM X-Bow R 2012 (N) </br> BAC Mono 2011 (N) </br> Honda Project 2&4 powered by RC213V 2015 (N)",
 	"Gran Turismo Red Bull X2014 Standard 2014 (N) </br> Gran Turismo Red Bull X2019 Competition 2019 (N)",
-	"Chevrolet Camaro Z28 1969 (U)</br>Chevrolet Corvette (C2) Sting Ray Sport Coupe 1963 (L)</br>Chevrolet Corvette (C3) Stingray Convertible 1969 (U)</br>Chevrolet Corvette (C3) Stingray L46 350 1969 (U)</br>Chris Holstrom Concepts 1967 Chevy Nova 2013 (N)</br>Dodge Challenger R/T 1970 (U)</br>Dodge Super Bee 1970 (U)</br>Eckert Mach Forty 2012 (N)</br>Ford 1932 Roadster 1963 (L)</br>Ford Mustang Boss 429 1969 (U)</br>Ford Mustang Mach 1 1971 (U)</br>Plymouth Superbird 1970 (U)</br>Pontiac Firebird Trans Am 1978 (U)</br>Pontiac GTO “The Judge” 1969 (L)</br>Roadster Shop Rampage (N)</br>Shelby Cobra 427 1966 (L)</br>Shelby GT350 1965 (L)</br>Wicked Fabrication GT 51 2016 (N)",
-	"FIAT 500F 1968 (U)",
+	"Chevrolet Camaro Z28 1969 (U)</br>Chevrolet Corvette (C2) Sting Ray Sport Coupe 1963 (L)</br>Chevrolet Corvette (C3) Stingray Convertible 1969 (U)</br>Chevrolet Corvette (C3) Stingray L46 350 1969 (U)</br>Dodge Challenger R/T 1970 (U)</br>Dodge Super Bee 1970 (U)</br>Ford 1932 Roadster 1963 (L)</br>Ford Mustang Boss 429 1969 (U)</br>Ford Mustang Mach 1 1971 (U)</br>Plymouth Superbird 1970 (U)</br>Pontiac Firebird Trans Am 1978 (U)</br>Pontiac GTO “The Judge” 1969 (L)</br>Shelby Cobra 427 1966 (L)</br>Shelby GT350 1965 (L)</br>Toyota Prius 2009 (N/U)",
 	"Nissan GT-R (R35) 2017 (N)</br>Nissan GT-R (R35) Safety Car (N)</br>Nissan GT-R (R35) NISMO 2017 (N)",
 	"Nissan Skyline (R32) GT-R V-Spec II 1994 (U)</br>Nissan Skyline (R33) GT-R V-Spec 1997 (U)</br>Nissan Skyline (R34) GT-R V-Spec Nur 2002 (N/U)",
-	"Nissan Fairlady Z (S30) 240ZG 1971 (U)</br>Nissan Fairlady Z (S30) Z432 1970 (U)</br>Nissan Skyline (KPGC10) GT-R 1971 (L)</br>Nissan Skyline (KPGC10) GT-R 1971 (L)"
+	"Nissan Fairlady Z (S30) 240ZG 1971 (U)</br>Nissan Fairlady Z (S30) Z432 1970 (U)</br>Nissan Skyline (KPGC10) GT-R 1971 (L)</br>Nissan Skyline (KPGC110) GT-R 1973 (L)"
+];
+
+var eventnames = [
+	"Corvette Versus Ferrari",
+	"Classic Goodwood Revival",
+	"Toyota 86 Cup",
+	"My First Car",
+	"AWD Street Sleepers",
+	"Honda B16 Cup",
+	"Autobahn Sleepers",
+	"Formula Fury",
+	"Trucks Versus Tomahawk",
+	"The Americans Cup",
+	"K-Car Cup",
+	"Genesis Coupe Versus Atenza",
+	"Open Wheel Mayhem",
+	"Red Bull Open",
+	"Classic Muscle Blowout",
+	"GTR Cup",
+	"Skyline Cup",
+	"Classic Nissan Cup"
+
 ];
 
 function rand(items) {
     // "~~" for a closest "int"
     return items[~~(items.length * Math.random())];
+}
+
+function randevent() {
+    // "~~" for a closest "int"
+	
+	var index = ~~(event.length * Math.random());
+	
+	document.getElementById('event').innerHTML = event[index];
+	document.getElementById('eventname').innerHTML = eventnames[index];
+	
+    return;
 }
 
 function randomIntFromInterval(min, max) { // min and max included 
@@ -164,6 +228,7 @@ function run() {
 	document.getElementById('pp').innerHTML = randomIntFromInterval(300,900);
 	document.getElementById('bop').innerHTML = rand(bop);
 	document.getElementById('onemake').innerHTML = rand(onemake);
+	randevent();
 }
 </script>
 
@@ -231,13 +296,21 @@ function run() {
 	
 	<div id="pp" class="textTHICCblu"></div>
 	
-	<p class="textBIGGUN">BOP Category/One Make:</p>
+	<p class="textBIGGUN">BOP Category</p>
 	
 	<div id="bop" class="textTHICCblu"></div>
 	
-	<p class="textTHICCblk">or</p>
+	<p class="textBIGGUN">One Make</p>
 	
 	<div id="onemake" class="textTHICCblu"></div>
+	
+	</br>
+	
+	<div id="eventname" class="textTHICCblk">asdf</div>
+	
+	</br>
+	
+	<div id="event" class="textTHICCblu">asdf</div>
 	
 	<button onclick = "run()" class="buttonBEER">Randomize</button>
 	</center>
