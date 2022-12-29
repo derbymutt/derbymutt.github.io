@@ -237,11 +237,27 @@ function randomIntFromInterval(min, max) { // min and max included
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function run() {
-	document.getElementById('track').innerHTML = rand(tracks);
+function makepp() {
 	document.getElementById('pp').innerHTML = randomIntFromInterval(300,900);
+}
+
+function maketrack() {
+	document.getElementById('track').innerHTML = rand(tracks);
+}
+
+function makebop() {
 	document.getElementById('bop').innerHTML = rand(bop);
+}
+
+function makeom() {
 	document.getElementById('onemake').innerHTML = rand(onemake);
+}
+function run() {
+	maketrack();
+	makepp();
+	makebop();
+	makeom();
+	
 	randevent();
 }
 </script>
@@ -267,6 +283,30 @@ function run() {
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 1em 1em 1em 1em;
+	}
+	.buttonBEER span {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
+
+	.buttonBEER span:after {
+	  content: '\00bb';
+	  position: absolute;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
+
+	.buttonBEER:hover span {
+	  padding-right: 25px;
+	}
+
+	.buttonBEER:hover span:after {
+	  opacity: 1;
+	  right: 0;
 	}
 	.textBIGGUN {
 	color: black;
@@ -299,24 +339,34 @@ function run() {
 <html>
 <body onload="run()" class="bg">
 	<div class="box">
+
 	<center>
+	
 	<p class="textTITLEYEAH">GT7DD Lobby Randomizer</p>
-	<button onclick = "run()" class="buttonBEER">Randomize</button>
+	
+	<button onclick = "run()" class="buttonBEER"><span>Randomize All</span></button>
+	
 	<p class="textBIGGUN">Track:</p>
 	
 	<div id="track" class="textTHICCblu"></div>
 	
+	<button onclick = "maketrack()" class="buttonBEER"><span>Randomize Track</span></button>
+	
 	<p class="textBIGGUN">Performance Points:</p>
 	
-	<div id="pp" class="textTHICCblu"></div>
+	<div id="pp" class="textTHICCblu"></div><button onclick = "makepp()" class="buttonBEER"><span>Randomize Performance Points</span></button>
 	
 	<p class="textBIGGUN">BOP Category</p>
 	
 	<div id="bop" class="textTHICCblu"></div>
 	
+	<button onclick = "makebop()" class="buttonBEER"><span>Randomize BOP Category</span></button>
+	
 	<p class="textBIGGUN">One Make</p>
 	
 	<div id="onemake" class="textTHICCblu"></div>
+	
+	<button onclick = "makeom()" class="buttonBEER"><span>Randomize One Make</span></button>
 	
 	</br>
 	
@@ -326,7 +376,8 @@ function run() {
 	
 	<div id="event" class="textTHICCblu">asdf</div>
 	
-	<button onclick = "run()" class="buttonBEER">Randomize</button>
+	<button onclick = "randevent()" class="buttonBEER"><span>Randomize Event</span></button>
+	
 	</center>
 </div>
 
